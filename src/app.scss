@@ -1,0 +1,12 @@
+$maxwidth: 900px;
+
+.max-width {
+    max-width: $maxwidth;
+    margin: auto;
+}
+
+@media (max-width: $maxwidth) {
+    .max-width {
+        margin: 0 15px;
+    }
+}

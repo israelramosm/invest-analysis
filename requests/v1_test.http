@@ -1,0 +1,14 @@
+### GET base
+curl -X GET http://localhost:8080/api/v1 -H 'Content-Type: application/json' -H 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTdhYTIzODlmNDA3Mzg5MDEwMTcyMyIsImVtYWlsIjoiZXhhbXBsZTFAZG9tYWluLmNvbSIsImlhdCI6MTYxMzg4MzM5MiwiZXhwIjoxNjEzODg2OTkyfQ.sDqOJz1vDcVLORW4EzUkkMYffvdLPVdO-rxjpGOisrI'
+
+### GET api/v1/tests
+curl -X GET http://localhost:8080/api/v1/tests -H 'Content-Type: application/json' -H 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTdhYTIzODlmNDA3Mzg5MDEwMTcyMyIsImVtYWlsIjoiZXhhbXBsZTFAZG9tYWluLmNvbSIsImlhdCI6MTYxMzg4MzM5MiwiZXhwIjoxNjEzODg2OTkyfQ.sDqOJz1vDcVLORW4EzUkkMYffvdLPVdO-rxjpGOisrI'
+
+### POST api/v1/tests
+curl -X POST http://localhost:8080/api/v1/tests/123 -H 'Content-Type: application/json' -H 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTdhYTIzODlmNDA3Mzg5MDEwMTcyMyIsImVtYWlsIjoiZXhhbXBsZTFAZG9tYWluLmNvbSIsImlhdCI6MTYxMzg4MzM5MiwiZXhwIjoxNjEzODg2OTkyfQ.sDqOJz1vDcVLORW4EzUkkMYffvdLPVdO-rxjpGOisrI' -d '{ "name": "test POST", "method": "POST", "description": "sending payload" }'
+
+### PUT api/v1/tests
+curl -X PUT http://localhost:8080/api/v1/tests/123 -H 'Content-Type: application/json' -H 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTdhYTIzODlmNDA3Mzg5MDEwMTcyMyIsImVtYWlsIjoiZXhhbXBsZTFAZG9tYWluLmNvbSIsImlhdCI6MTYxMzg4MzM5MiwiZXhwIjoxNjEzODg2OTkyfQ.sDqOJz1vDcVLORW4EzUkkMYffvdLPVdO-rxjpGOisrI' -d '{ "name": "test POST", "method": "POST", "description": "sending payload" }'
+
+### DELETE api/v1/tests
+curl -X DELETE http://localhost:8080/api/v1/tests/123 -H 'Content-Type: application/json' -H 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTdhYTIzODlmNDA3Mzg5MDEwMTcyMyIsImVtYWlsIjoiZXhhbXBsZTFAZG9tYWluLmNvbSIsImlhdCI6MTYxMzg4MzM5MiwiZXhwIjoxNjEzODg2OTkyfQ.sDqOJz1vDcVLORW4EzUkkMYffvdLPVdO-rxjpGOisrI' -d '{ "name": "test POST", "method": "POST", "description": "sending payload" }'

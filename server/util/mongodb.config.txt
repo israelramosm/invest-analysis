@@ -1,0 +1,11 @@
+linux
+
+mongod --dbpath /home/israel/documents/mongodb/databases
+running process...
+
+mongo
+>
+db.createUser({user: 'ubuntu', pwd:'ubuntu', roles:[{role:'userAdminAnyDatabase',db: 'admin'}]})
+>
+use expressdb
+db.createUser({user: 'expressjs', pwd:'password', roles:[{role:'readWrite',db: 'expressdb'}]})
